@@ -1,4 +1,4 @@
-name = "tkservice-public"
+﻿name = "tkservice-public"
 compatibility_date = "2026-05-29"
 
 [[kv_namespaces]]
