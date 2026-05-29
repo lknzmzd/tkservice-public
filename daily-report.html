@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="tkservice-api-base" content="" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Report</title>
+  <link rel="stylesheet" href="./styles.css?v=11" />
+</head>
+<body>
+  <main class="daily-report-page">
+    <section class="daily-report-card">
+      <h1>Daily Report</h1>
+      <p id="reportDate"></p>
+
+      <section class="status-strip">
+        <div class="status-item">
+          <div class="status-label">SYSTEM STATUS</div>
+          <div id="systemStatusValue" class="status-value status-live">Active</div>
+        </div>
+
+        <div class="status-item">
+          <div class="status-label">LAST UPDATE</div>
+          <div id="statusLastUpdate" class="status-value">—</div>
+        </div>
+
+        <div class="status-item">
+          <div class="status-label">CURRENT TOTAL</div>
+          <div id="statusCurrentTotal" class="status-value">0</div>
+        </div>
+
+        <div class="status-item">
+          <div class="status-label">LAST ADDED BY</div>
+          <div id="statusLastAddedBy" class="status-value">—</div>
+        </div>
+      </section>
+
+      <div id="dailyReportContainer" class="daily-report-output"></div>
+
+      <div class="report-actions">
+        <button id="copyDailyReportBtn" class="btn btn-copy" type="button">Copy Daily Report</button>
+        <button id="saveReportBtn" class="btn btn-refresh" type="button">Refresh Report</button>
+        <button id="resetReportBtn" class="btn btn-reset" type="button">Reset Report</button>
+      </div>
+
+      <p id="reportStatus">No updates yet.</p>
+
+      <hr class="report-divider" />
+
+      <section>
+        <h2 class="section-title">Activity Summary</h2>
+        <p><strong>Last added by:</strong> <span id="lastAddedBy">—</span></p>
+        <p><strong>Last added at:</strong> <span id="lastAddedAt">—</span></p>
+        <p><strong>Last reset by:</strong> <span id="lastResetBy">—</span></p>
+        <p><strong>Last reset at:</strong> <span id="lastResetAt">—</span></p>
+        <p><strong>Last reset IP:</strong> <span id="lastResetIp">—</span></p>
+      </section>
+
+      <hr class="report-divider" />
+
+      <section>
+        <h2 class="section-title">Add History</h2>
+        <div id="addHistoryList" class="history-box empty-state">No add history yet.</div>
+      </section>
+
+      <hr class="report-divider" />
+
+      <section>
+        <h2 class="section-title">Reset History</h2>
+        <div id="resetHistoryList" class="history-box empty-state">No reset history yet.</div>
+      </section>
+    </section>
+
+  </main>
+
+  <script type="module" src="./daily-report.js?v=public-pages-1"></script>
+</body>
+</html>

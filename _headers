@@ -1,0 +1,9 @@
+/*
+  Cache-Control: no-store
+  X-Content-Type-Options: nosniff
+
+/*.js
+  Cache-Control: no-store
+
+/*.html
+  Cache-Control: no-store

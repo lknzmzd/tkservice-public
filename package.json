@@ -1,0 +1,13 @@
+{
+  "name": "tkservice-public-pages",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2026-05-29",
+    "deploy": "wrangler pages deploy . --project-name tkservice-public"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
