@@ -1,0 +1,6 @@
+name = "tkservice-public"
+compatibility_date = "2026-05-29"
+
+[[kv_namespaces]]
+binding = "TKS_DAILY_REPORT"
+id = "3004b09f58694164b050e7a7142bce3c"
