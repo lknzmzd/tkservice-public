@@ -4,9 +4,3 @@ compatibility_date = "2026-05-29"
 [[kv_namespaces]]
 binding = "TKS_DAILY_REPORT"
 id = "3004b09f58694164b050e7a7142bce3c"
-
-# Create a KV namespace in Cloudflare and bind it to TKS_DAILY_REPORT.
-# In Cloudflare Pages dashboard:
-# Settings -> Functions -> KV namespace bindings -> Add binding
-# Variable name: TKS_DAILY_REPORT
-# Namespace: your created KV namespace
